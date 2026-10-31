@@ -1,52 +1,105 @@
-body{
-   
+:root{
+    --colorTexto: #4a5568;
+}
+
+
+
+body {
+
     font-family: 'Inter', sans-serif;
 }
 
-.navegacionContenedor{
+.navegacionContenedor {
     display: flex;
     justify-content: space-around;
-     padding: 1px 0; 
+    padding: 1px 0;
     align-items: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
-.navegacionContenedor ul{
+.navOpciones {
     display: flex;
-    gap: 70px;
-
-}
-
-.navegacionContenedor li{
-    list-style: none;
     
+
 }
 
-.navegacionContenedor a{
+.navegacionContenedor li {
+    list-style: none;
+
+}
+
+.navegacionContenedor a {
     display: block;
     padding: 20px 20px;
-    color: hsl(0, 1%, 40%);
+    color:  var(--colorTexto);
     text-decoration: none;
-     
+    font-size: small ;
 }
 
-.navegacionContenedor button{
+.navegacionContenedor button {
     color: white;
-      background: linear-gradient(to top right, #5a0f8f, #6a6ef0);
-       padding: 15px 30px;
+    background: linear-gradient(to top right, #5a0f8f, #6a6ef0);
+    padding: 10px 30px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
 }
-.navegacionContenedor img{
+
+.navegacionContenedor button:hover{
+       transform: translateY(-2px);                          /* se eleva un poco */
+    box-shadow: 0 8px 20px rgba(90, 15, 143, 0.35);       /* sombra morada */
+    filter: brightness(1.1); 
+}
+
+.navegacionContenedor img {
     width: 100%;
     max-width: 200px;
     min-width: 100px;
     height: auto;
 }
 
-.navegacionContenedor a:hover{
+.navegacionContenedor a:hover {
     background-color: #f3e8ff;
     color: #5a0f8f;
+
+}
+
+.seccionUno {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 100px;
     
+}
+
+.seccionUno h1 {
+    font-weight: 10;
+}
+
+.seccionUno h1 strong {
+    background: linear-gradient(to right, #d6559f, #a66fc9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+.seccionUno h1 b {
+    font-weight: 800;
+}
+.seccionUnoIzquierda p{
+     color: var(--colorTexto);
+}
+
+.seccionUnoIzquierda button{
+    background-color: #3d63ea;
+    color: white;
+    border: none;
+    padding: 20px 25px;
+    border-radius: 10px;
+}
+
+.seccionUnoDerecha img{
+    border-radius: 12px;
+    box-shadow:   0 4px 12px rgba(0, 0, 0, 0.06);
 }
