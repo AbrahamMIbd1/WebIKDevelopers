@@ -6,29 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>IKDevelopers</title>
 </head>
 
 <body>
     <!--Barra de navegacion-->
-    <nav class="navegacionContenedor">
+    <nav class="navegacionContenedor" aria-label="Navegacion principal">
         <!--Contenedor de la imagen del nav-->
         <div class="navImg">
-            <img src="https://picsum.photos/id/393/500/150" alt="">
+            <img src="https://picsum.photos/id/393/500/150" alt="Logo IK Developers">
         </div>
         <!--Contenedor del menu con las opciones-->
         <div class="navOpciones">
-            <ul class="navOpciones">
-                <li><a href="">About us</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Case Studies</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">How it Works</a></li>
-                <li><a href="">Hire</a></li>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">Hire</a></li>
             </ul>
         </div>
         <!--Contenedor del boton del nav-->
@@ -38,53 +37,51 @@
     </nav>
     <!--Empieza las secciones del main-->
     <main>
-        <!--Seccion 1 -->
+        <!--Seccion 1: Presentacion-->
         <section class="seccionUno">
-            <!--Contenedor del lazo izquierdo de la seccion 1 Titulo y boton-->
+            <!--Contenedor del lado izquierdo de la seccion 1 titulo y boton-->
             <div class="seccionUnoIzquierda">
                 <h1>Great <strong>Product</strong> is <br><b>built by great</b> <strong>teams</strong></h1>
-                <p>We help build and manage a team of world-class developers  <br> to bring your vision to life</p>
+                <p>We help build and manage a team of world-class developers to bring your vision to life</p>
                 <button>Let's get started!</button>
             </div>
             <!--Contenedor del lado derecho de la seccion 1 imagen-->
             <div class="seccionUnoDerecha">
-                <img src="https://picsum.photos/id/142/500/350" alt="">
+                <img src="https://picsum.photos/id/142/500/350" alt="Equipo de desarrolladores">
             </div>
-
         </section>
-        <!--Seccion 2 -->
+        <!--Seccion 2: Testimonios-->
         <section class="seccionDos">
-            <!--Contenedor del titulo de la seccion2-->
+            <!--Contenedor del titulo de la seccion 2-->
             <div class="seccionDosTitulo">
                 <h2>Why customers love <strong>working with us</strong></h2>
             </div>
-            <!--Contenedor del texto del contendor 2-->
+            <!--Contenedor del texto de la seccion 2-->
             <div class="seccionDosTexto">
                 <p>Without any doubt I recommend Alcaline Solutions as one of the best web design and digital marketing
-                    agencies. One of the best agencies I've came across so far. Wouldn't be hesitated to introduce their
+                    agencies. One of the best agencies I've come across so far. I wouldn't hesitate to introduce their
                     work to someone else.</p>
-
             </div>
-            <!--Contenedor de las flechas del contenedor para moverse-->
+            <!--Contenedor de las flechas para moverse entre las cards-->
             <div class="seccionDosFlechas">
-                <button class="flechaIzq">&larr;</button>
-                <button class="flechaDer">&rarr;</button>
+                <button class="flechaIzq" aria-label="Anterior">&larr;</button>
+                <button class="flechaDer" aria-label="Siguiente">&rarr;</button>
             </div>
-            <!--Contenedor de la presentaicon del equipo cards-->
+            <!--Contenedor de la presentacion del equipo cards-->
             <div class="seccionDosCards">
                 <!--Card 1 con su contenido-->
                 <div class="card">
                     <!--Imagen de la card-->
                     <div class="cardImagen">
-                        <img src="https://picsum.photos/id/238/500/500" alt="">
+                        <img src="https://picsum.photos/id/238/500/500" alt="Foto de Romeena De Silva">
                     </div>
                     <!--Estrellas-->
-                    <div class="cardEstrellas" aria-label="5 de 5 estrellas">
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
+                    <div class="cardEstrellas" role="img" aria-label="5 de 5 estrellas">
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
                     </div>
                     <!--Contenido dentro de la card-->
                     <div class="cardContenido">
@@ -96,15 +93,15 @@
                 <div class="card">
                     <!--Imagen de la card-->
                     <div class="cardImagen">
-                        <img src="https://picsum.photos/id/244/500/500" alt="">
+                        <img src="https://picsum.photos/id/244/500/500" alt="Foto de Romeena De Silva">
                     </div>
                     <!--Estrellas-->
-                    <div class="cardEstrellas" aria-label="5 de 5 estrellas">
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
+                    <div class="cardEstrellas" role="img" aria-label="5 de 5 estrellas">
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
                     </div>
                     <!--Contenido dentro de la card-->
                     <div class="cardContenido">
@@ -116,15 +113,15 @@
                 <div class="card">
                     <!--Imagen de la card-->
                     <div class="cardImagen">
-                        <img src="https://picsum.photos/id/247/500/500" alt="">
+                        <img src="https://picsum.photos/id/247/500/500" alt="Foto de Imran Khan">
                     </div>
                     <!--Estrellas-->
-                    <div class="cardEstrellas" aria-label="5 de 5 estrellas">
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
+                    <div class="cardEstrellas" role="img" aria-label="5 de 5 estrellas">
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
                     </div>
                     <!--Contenido dentro de la card-->
                     <div class="cardContenido">
@@ -136,15 +133,15 @@
                 <div class="card">
                     <!--Imagen de la card-->
                     <div class="cardImagen">
-                        <img src="https://picsum.photos/id/248/500/500" alt="">
+                        <img src="https://picsum.photos/id/248/500/500" alt="Foto de Romeena De Silva">
                     </div>
                     <!--Estrellas-->
-                    <div class="cardEstrellas" aria-label="5 de 5 estrellas">
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
+                    <div class="cardEstrellas" role="img" aria-label="5 de 5 estrellas">
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
                     </div>
                     <!--Contenido dentro de la card-->
                     <div class="cardContenido">
@@ -156,15 +153,15 @@
                 <div class="card">
                     <!--Imagen de la card-->
                     <div class="cardImagen">
-                        <img src="https://picsum.photos/id/242/500/500" alt="">
+                        <img src="https://picsum.photos/id/242/500/500" alt="Foto de Romeena De Silva">
                     </div>
                     <!--Estrellas-->
-                    <div class="cardEstrellas" aria-label="5 de 5 estrellas">
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
+                    <div class="cardEstrellas" role="img" aria-label="5 de 5 estrellas">
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
+                        <span aria-hidden="true">&#9733;</span>
                     </div>
                     <!--Contenido dentro de la card-->
                     <div class="cardContenido">
@@ -174,168 +171,163 @@
                 </div>
             </div>
         </section>
-          <!-- Sección 3 -->
-        <section>
-            <h2>Our design and development approach</h2>
-
-            <article>
-                <span>🚀</span>
-                <h3>UX Driven Engineering</h3>
-                <p>
-                    Unlike other companies, we are a UX first development company.
-                    Projects are driven by designers and they make sure design
-                    and experiences translate to code.
-                </p>
-            </article>
-
-            <article>
-                <span>&lt;/&gt;</span>
-                <h3>Developing Shared Understanding</h3>
-                <p>
-                    Unlike other companies, we are a UX first development company.
-                    Projects are driven by designers and they make sure design
-                    and experiences translate to code.
-                </p>
-            </article>
-
-            <article>
-                <span>💗</span>
-                <h3>Proven Experience and Expertise</h3>
-                <p>
-                    Unlike other companies, we are a UX first development company.
-                    Projects are driven by designers and they make sure design
-                    and experiences translate to code.
-                </p>
-            </article>
-
-            <article>
-                <span>🛡️</span>
-                <h3>Security &amp; Intellectual Property (IP)</h3>
-                <p>
-                    Unlike other companies, we are a UX first development company.
-                    Projects are driven by designers and they make sure design
-                    and experiences translate to code.
-                </p>
-            </article>
-
-            <article>
-                <span>✅</span>
-                <h3>Code Reviews</h3>
-                <p>
-                    Unlike other companies, we are a UX first development company.
-                    Projects are driven by designers and they make sure design
-                    and experiences translate to code.
-                </p>
-            </article>
-
-            <article>
-                <span>🔒</span>
-                <h3>Quality Assurance &amp; Testing</h3>
-                <p>
-                    Unlike other companies, we are a UX first development company.
-                    Projects are driven by designers and they make sure design
-                    and experiences translate to code.
-                </p>
-            </article>
+        <!--Seccion 3: Enfoque de diseño y desarrollo-->
+        <section class="seccionTres">
+            <h2 class="seccionTresTitulo">Our design and development approach</h2>
+            <!--Contenedor de los enfoques-->
+            <div class="seccionTresEnfoques">
+                <!--Enfoque 1-->
+                <article class="enfoque">
+                    <span class="enfoqueIcono" aria-hidden="true">🚀</span>
+                    <h3 class="enfoqueTitulo">UX Driven Engineering</h3>
+                    <p class="enfoqueTexto">
+                        Unlike other companies, we are a UX first development company.
+                        Projects are driven by designers and they make sure design
+                        and experiences translate to code.
+                    </p>
+                </article>
+                <!--Enfoque 2-->
+                <article class="enfoque">
+                    <span class="enfoqueIcono" aria-hidden="true">&lt;/&gt;</span>
+                    <h3 class="enfoqueTitulo">Developing Shared Understanding</h3>
+                    <p class="enfoqueTexto">
+                        Unlike other companies, we are a UX first development company.
+                        Projects are driven by designers and they make sure design
+                        and experiences translate to code.
+                    </p>
+                </article>
+                <!--Enfoque 3-->
+                <article class="enfoque">
+                    <span class="enfoqueIcono" aria-hidden="true">💗</span>
+                    <h3 class="enfoqueTitulo">Proven Experience and Expertise</h3>
+                    <p class="enfoqueTexto">
+                        Unlike other companies, we are a UX first development company.
+                        Projects are driven by designers and they make sure design
+                        and experiences translate to code.
+                    </p>
+                </article>
+                <!--Enfoque 4-->
+                <article class="enfoque">
+                    <span class="enfoqueIcono" aria-hidden="true">🛡️</span>
+                    <h3 class="enfoqueTitulo">Security &amp; Intellectual Property (IP)</h3>
+                    <p class="enfoqueTexto">
+                        Unlike other companies, we are a UX first development company.
+                        Projects are driven by designers and they make sure design
+                        and experiences translate to code.
+                    </p>
+                </article>
+                <!--Enfoque 5-->
+                <article class="enfoque">
+                    <span class="enfoqueIcono" aria-hidden="true">✅</span>
+                    <h3 class="enfoqueTitulo">Code Reviews</h3>
+                    <p class="enfoqueTexto">
+                        Unlike other companies, we are a UX first development company.
+                        Projects are driven by designers and they make sure design
+                        and experiences translate to code.
+                    </p>
+                </article>
+                <!--Enfoque 6-->
+                <article class="enfoque">
+                    <span class="enfoqueIcono" aria-hidden="true">🔒</span>
+                    <h3 class="enfoqueTitulo">Quality Assurance &amp; Testing</h3>
+                    <p class="enfoqueTexto">
+                        Unlike other companies, we are a UX first development company.
+                        Projects are driven by designers and they make sure design
+                        and experiences translate to code.
+                    </p>
+                </article>
+            </div>
         </section>
-
-        <!-- Sección 4 -->
-        <section>
-            <h2>Featured Resources</h2>
-
-            <article>
-                <img
-                    src="https://picsum.photos/200/300">
-                <h3>
-                    How to Build a Scalable Application
-                    up to 1 Million Users on AWS
-                </h3>
-                <a href="#">Read More →</a>
-            </article>
-
-            <article>
-                <img
-                    src="https://picsum.photos/id/22/200/300">
-                <h3>
-                    How to Build a Scalable Application
-                    up to 1 Million Users on AWS
-                </h3>
-                <a href="#">Read More →</a>
-            </article>
-
-            <article>
-                <img
-                    src="https://picsum.photos/id/24/200/300" >
-                <h3>
-                    How to Build a Scalable Application
-                    up to 1 Million Users on AWS
-                </h3>
-                <a href="#">Read More →</a>
-            </article>
-
-            <article>
-                <img
-                    src="https://picsum.photos/id/1/200/300" >
-                <h3>
-                    How to Build a Scalable Application
-                    up to 1 Million Users on AWS
-                </h3>
-                <a href="#">Read More →</a>
-            </article>
+        <!--Seccion 4: Recursos destacados-->
+        <section class="seccionCuatro">
+            <h2 class="seccionCuatroTitulo">Featured Resources</h2>
+            <!--Contenedor de los recursos-->
+            <div class="seccionCuatroRecursos">
+                <!--Recurso 1-->
+                <article class="recurso">
+                    <img class="recursoImagen" src="https://picsum.photos/200/300" alt="Imagen del articulo">
+                    <h3 class="recursoTitulo">
+                        How to Build a Scalable Application
+                        up to 1 Million Users on AWS
+                    </h3>
+                    <a class="recursoEnlace" href="#">Read More →</a>
+                </article>
+                <!--Recurso 2-->
+                <article class="recurso">
+                    <img class="recursoImagen" src="https://picsum.photos/id/22/200/300" alt="Imagen del articulo">
+                    <h3 class="recursoTitulo">
+                        How to Build a Scalable Application
+                        up to 1 Million Users on AWS
+                    </h3>
+                    <a class="recursoEnlace" href="#">Read More →</a>
+                </article>
+                <!--Recurso 3-->
+                <article class="recurso">
+                    <img class="recursoImagen" src="https://picsum.photos/id/24/200/300" alt="Imagen del articulo">
+                    <h3 class="recursoTitulo">
+                        How to Build a Scalable Application
+                        up to 1 Million Users on AWS
+                    </h3>
+                    <a class="recursoEnlace" href="#">Read More →</a>
+                </article>
+                <!--Recurso 4-->
+                <article class="recurso">
+                    <img class="recursoImagen" src="https://picsum.photos/id/1/200/300" alt="Imagen del articulo">
+                    <h3 class="recursoTitulo">
+                        How to Build a Scalable Application
+                        up to 1 Million Users on AWS
+                    </h3>
+                    <a class="recursoEnlace" href="#">Read More →</a>
+                </article>
+            </div>
         </section>
-
-        
-       
     </main>
- <!-- Sección 5: Pie de página -->
-        <footer class="seccionCinco">
-        <div class="Contenedor">
-            <!-- Nombre y descripción -->
-            <div class="Descripcion">
-                <p>Ik developers</p>
+    <!--Seccion 5: Pie de pagina-->
+    <footer class="footer">
+        <!--Contenedor de las columnas del footer-->
+        <div class="footerContenedor">
+            <!--Nombre y descripcion-->
+            <div class="footerDescripcion">
+                <p class="footerNombre">Ik developers</p>
                 <p>
                     Lorem Ipsum is simply dummy text of the
                     printing and typesetting industry.
                 </p>
             </div>
-
-        <!-- Enlaces -->
-        <nav class="Enlaces" aria-label="Enlaces del pie de página">
-            <h3>Links</h3>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Case Studies</a></li>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Areas We Serve</a></li>
-            </ul>
-        </nav>
-
-        <!-- Información de contacto -->
-        <div class="Contacto">
-            <h3>Contact us</h3>
-            <p>
-                Lorem Ipsum is simply dummy text
-                of the printing and typesetting industry.
-            </p>
-            <a href="tel:+923183561921">+923183561921</a>
+            <!--Enlaces-->
+            <nav class="footerEnlaces" aria-label="Enlaces del pie de pagina">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Areas We Serve</a></li>
+                </ul>
+            </nav>
+            <!--Informacion de contacto-->
+            <div class="footerContacto">
+                <h3>Contact us</h3>
+                <p>
+                    Lorem Ipsum is simply dummy text
+                    of the printing and typesetting industry.
+                </p>
+                <a href="tel:+923183561921">+923183561921</a>
+            </div>
+            <!--Redes sociales-->
+            <div class="footerRedes">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
         </div>
-
-        <!-- Redes sociales -->
-        <div class="Redes">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
+        <!--Derechos de autor-->
+        <div class="footerCopyright">
+            <p>© 2023 Copyright by IK Developers. All rights reserved.</p>
         </div>
-    </div>
-
-    <!-- Derechos de autor -->
-    <div class="Copyright">
-        <p>© 2023 Copyright by IK Developers. All rights reserved.</p>
-    </div>
     </footer>
 </body>
 
