@@ -1,0 +1,102 @@
+/* =========================================================
+   ESTANDARES DEL PROYECTO - IK Developers
+   Todos los colores, fuentes, tamaños, espacios, bordes y
+   sombras se toman de aqui con var(--nombre).
+   No escribir valores sueltos (#hex, px de fuente, sombras)
+   en estilos.css. Si falta algo, se agrega aqui y se avisa
+   al equipo.
+   ========================================================= */
+
+:root {
+    /* ---------- Tipografia ---------- */
+    /* Unica fuente del sitio. Pesos cargados en index.html: 300-800 */
+    --fuentePrincipal: 'Inter', sans-serif;
+
+    /* Pesos */
+    --pesoLigero: 300;      /* primera linea de titulos: "Great ... is", "Why customers love" */
+    --pesoNormal: 400;      /* parrafos */
+    --pesoMedio: 500;       /* menu, botones, enlaces "Read More" */
+    --pesoSemibold: 600;    /* titulos de cards y enfoques, nombres */
+    --pesoBold: 700;        /* segunda linea de titulos de seccion */
+    --pesoExtraBold: 800;   /* titulo principal h1 */
+
+    /* Tamaños */
+    --textoH1: 48px;        /* titulo de la seccion 1 */
+    --textoH2: 36px;        /* titulos de seccion */
+    --textoH3: 20px;        /* titulos de enfoques (seccion 3) */
+    --textoGrande: 18px;    /* parrafo de la seccion 1, testimonio, footer */
+    --textoBase: 16px;      /* menu, nombres, titulos de recursos */
+    --textoChico: 14px;  /* botones, copyright */
+    --textoMini: 12px;      /* cargo en las cards */
+
+    /* Interlineado */
+    --interlineadoTitulo: 1.3;
+    --interlineadoTexto: 1.6;
+    --interlineadoAmplio: 2;    /* parrafo de la seccion 1 y testimonio */
+
+    /* ---------- Colores de marca ---------- */
+    --colorPrimario: #5a0f8f;           /* morado: nombre activo, "Read More", flechas, hover del menu */
+    --colorPrimarioClaro: #6a6ef0;      /* final del degradado del boton Contact */
+    --colorPrimarioFondo: #f3e8ff;      /* fondo suave del hover del menu */
+    --colorSecundario: #3d63ea;         /* azul: boton "Let's get started!" */
+
+    /* Degradados */
+    --degradadoBoton: linear-gradient(to top right, var(--colorPrimario), var(--colorPrimarioClaro));
+    --degradadoTexto: linear-gradient(to right, #d6559f, #a66fc9);  /* "Product", "teams" */
+
+    /* ---------- Colores de texto ---------- */
+    --colorTitulo: #1a202c;         /* titulos h1, h2, h3 */
+    --colorTexto: #4a5568;          /* menu, parrafos principales */
+    --colorTextoSuave: #718096;     /* testimonio, textos de enfoques, footer */
+    --colorTextoInactivo: #a0aec0;  /* cards no seleccionadas */
+    --colorTextoBlanco: #ffffff;    /* texto sobre botones */
+
+    /* ---------- Colores de fondo ---------- */
+    --colorFondo: #ffffff;          /* secciones 1, 2 y 4 */
+    --colorFondoAlterno: #f7f8fa;   /* seccion 3 y footer */
+
+    /* ---------- Bordes ---------- */
+    --colorBorde: #e2e8f0;          /* lineas divisorias (footer, copyright) */
+    --colorBordeCard: #ecdcf2;      /* borde lila de las cards de la seccion 3 */
+
+    /* ---------- Acentos de la seccion 3 ---------- */
+    /* Un color por enfoque: icono y palabras "UX first" */
+    --acentoOscuro: #1f1f24;        /* UX Driven Engineering */
+    --acentoAzul: #3cc4e6;          /* Developing Shared Understanding */
+    --acentoRosa: #f2547d;          /* Proven Experience */
+    --acentoVerde: #2dd4a4;         /* Security & IP */
+    --acentoAmarillo: #f7c948;      /* Code Reviews */
+    --acentoMagenta: #c2185b;       /* Quality Assurance */
+
+    /* Estrellas */
+    --colorEstrella: #fbbf24;
+
+    /* ---------- Espaciado ---------- */
+    /* Usar siempre estos valores para margin, padding y gap */
+    --espacioXs: 4px;
+    --espacioSm: 8px;
+    --espacioMd: 16px;
+    --espacioLg: 24px;
+    --espacioXl: 32px;
+    --espacio2xl: 48px;
+    --espacio3xl: 64px;
+    --espacioSeccion: 96px;     /* separacion vertical entre secciones */
+
+    /* Ancho maximo del contenido */
+    --anchoContenedor: 1200px;
+
+    /* ---------- Bordes redondeados ---------- */
+    --radioSm: 6px;         /* botones */
+    --radioMd: 10px;        /* iconos de la seccion 3 */
+    --radioLg: 12px;        /* imagenes de recursos y seccion 1 */
+    --radioCircular: 50%;   /* fotos de las cards, flechas, redes sociales */
+
+    /* ---------- Sombras ---------- */
+    --sombraNav: 0 4px 12px rgba(0, 0, 0, 0.06);
+    --sombraSuave: 0 4px 12px rgba(0, 0, 0, 0.08);          /* iconos de redes, foto activa */
+    --sombraBoton: 0 10px 25px rgba(0, 0, 0, 0.12);         /* boton "Let's get started!" */
+    --sombraBotonHover: 0 8px 20px rgba(90, 15, 143, 0.35); /* hover del boton Contact */
+
+    /* ---------- Transiciones ---------- */
+    --transicion: 0.2s ease;
+}
