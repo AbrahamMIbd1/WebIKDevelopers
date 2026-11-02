@@ -1,5 +1,9 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 body {
     font-family: var(--fuentePrincipal);
+    margin: 0 ;
 }
 
 /* ===== Barra de navegacion ===== */
@@ -58,7 +62,7 @@ body {
 .seccionUno {
     display: flex;
     justify-content: center;
-    gap: var(--espacioSm);
+    gap: var(--espacio2xl);
     margin-top: var(--espacioSeccion);
 }
 
@@ -89,8 +93,126 @@ body {
     padding: var(--espacioMd) var(--espacioLg);
     border-radius: var(--radioSm);
 }
+.seccionUnoIzquierda button:hover{
+    background-color: var(--colorPrimario);
+    cursor: pointer;
+    box-shadow: var(--sombraBotonHover);
+    transform: translateY(-2px);
+}
 
 .seccionUnoDerecha img {
     border-radius: var(--radioLg);
     box-shadow: var(--sombraSuave);
+}
+
+
+.seccionDosTitulo{ 
+
+    margin-top: var(--espacioSeccion);
+    text-align: center;
+    font-size: var(--textoH3);
+    
+}
+.seccionDosTitulo h2 {
+   
+    font-weight: var(--pesoLigero);   
+}
+
+.seccionDosTitulo h2 strong {
+    font-weight: var(--pesoBold);    
+}
+
+.seccionDosTexto p{
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    font-size: var(--textoChico);
+    color: var(--colorTexto);
+}
+
+.seccionDosFlechas{
+    display: flex;
+    justify-content: space-between;
+    padding-left: var(--espacioXl);
+    padding-right: var(--espacioXl);
+}
+.seccionDosFlechas button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--espacioXl);
+    height: var(--espacioXl);
+    border: 2px solid var(--colorPrimario);
+    border-radius: var(--radioCircular);
+    background-color: var(--colorFondo);
+    color: var(--colorPrimario);
+    font-size: var(--textoH3);
+    box-shadow: var(--sombraSuave);
+    cursor: pointer;
+}
+
+.seccionDosFlechas button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.seccionDosCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--espacioSeccion);
+    gap: var(--espacio2xl);
+}
+
+/* Cards no seleccionadas: centradas y apagadas */
+.card {
+    text-align: center;
+    opacity: 0.5;
+}
+
+.seccionDosCards .cardImagen {
+    display: flex;
+    justify-content: center;
+}
+
+.seccionDosCards .cardImagen img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: var(--radioCircular);
+}
+
+.cardEstrellas {
+    text-align: center;
+}
+
+.cardEstrellas span{
+    color: var(--colorEstrella);
+}
+
+.cardContenido h3{
+    font-size: var(--textoChico);
+    color: var(--colorTextoInactivo);
+}
+.cardContenido p{
+    font-size: var(--textoMini);
+    color: var(--colorTextoInactivo);
+}
+
+/* Card activa: sin transparencia, foto mas grande con sombra */
+.card.cardActiva {
+    opacity: 1;
+}
+
+.cardActiva .cardImagen img {
+    width: 100px;
+    height: 100px;
+    box-shadow: var(--sombraSuave);
+}
+
+.cardActiva .cardContenido h3 {
+    color: var(--colorPrimario);
+}
+
+.cardActiva .cardContenido p {
+    color: var(--colorTitulo);
 }
