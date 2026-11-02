@@ -1,5 +1,9 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 body {
     font-family: var(--fuentePrincipal);
+    margin: 0 ;
 }
 
 /* ===== Barra de navegacion ===== */
@@ -58,7 +62,7 @@ body {
 .seccionUno {
     display: flex;
     justify-content: center;
-    gap: var(--espacioSm);
+    gap: var(--espacio2xl);
     margin-top: var(--espacioSeccion);
 }
 
@@ -88,6 +92,12 @@ body {
     border: none;
     padding: var(--espacioMd) var(--espacioLg);
     border-radius: var(--radioSm);
+}
+.seccionUnoIzquierda button:hover{
+    background-color: var(--colorPrimario);
+    cursor: pointer;
+    box-shadow: var(--sombraBotonHover);
+    transform: translateY(-2px);
 }
 
 .seccionUnoDerecha img {
@@ -138,6 +148,11 @@ body {
     font-size: var(--textoH3);
     box-shadow: var(--sombraSuave);
     cursor: pointer;
+}
+
+.seccionDosFlechas button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
 }
 
 .seccionDosCards{
