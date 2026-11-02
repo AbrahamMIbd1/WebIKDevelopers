@@ -99,4 +99,6 @@
 
     /* ---------- Transiciones ---------- */
     --transicion: 0.2s ease;
+
+    --altoImagenRecurso: 175px;
 }
