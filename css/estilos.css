@@ -9,11 +9,13 @@ body {
 /* ===== Barra de navegacion ===== */
 .navegacionContenedor {
     display: flex;
-    justify-content: space-around;
-    padding: 1px 0;
+    justify-content: space-between;
+    padding: 1px var(--espacioMd);
     align-items: center;
     box-shadow: var(--sombraNav);
+    
 }
+
 
 .navOpciones ul {
     display: flex;
@@ -68,6 +70,7 @@ body {
 
 .seccionUno h1 {
     font-weight: var(--pesoLigero);
+    line-height:var(--interlineadoTitulo);
 }
 
 .seccionUno h1 strong {
@@ -84,6 +87,8 @@ body {
 
 .seccionUnoIzquierda p {
     color: var(--colorTexto);
+    line-height: var(--interlineadoTexto);
+    margin-bottom: 40px;
 }
 
 .seccionUnoIzquierda button {
@@ -110,12 +115,13 @@ body {
 
     margin-top: var(--espacioSeccion);
     text-align: center;
-    font-size: var(--textoH3);
+    font-size: var(--textoGrande);
     
 }
 .seccionDosTitulo h2 {
    
-    font-weight: var(--pesoLigero);   
+    font-weight: var(--pesoLigero);  
+    line-height: var(--interlineadoTitulo); 
 }
 
 .seccionDosTitulo h2 strong {
@@ -126,7 +132,8 @@ body {
     font-family: var(--fuentePrincipal);
     text-align: center;
     font-size: var(--textoChico);
-    color: var(--colorTexto);
+    color: var(--colorTextoSuave);
+    line-height: 1.8;
 }
 
 .seccionDosFlechas{
@@ -348,6 +355,7 @@ body {
     margin-top: var(--espacioLg);
     text-align: right;
     color: var(--colorPrimario);
+    font-weight: var(--pesoSemibold);
     font-size: var(--textoBase);
     text-decoration: none;
 }
@@ -359,6 +367,7 @@ body {
 /* ===== Seccion 5: Pie de pagina ===== */
 
 .footer {
+    
     background-color: var(--colorFondoAlterno);
     color: var(--colorTextoSuave);
     font-size: var(--textoGrande);
@@ -366,19 +375,21 @@ body {
 }
 
 .footerContenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   padding-top: 50px;
+    padding-bottom: 50px;
     gap: var(--espacio2xl);
-    max-width: var(--anchoContenedor);
-    margin: 0 auto;
-    padding: var(--espacio3xl) var(--espacioLg);
+    
+    justify-items: center;
 }
+
 
 /* La descripcion ocupa mas espacio que los enlaces */
 .footerDescripcion {
     flex: 2;
     min-width: 0;
+    margin-left: 50px;
 }
 
 .footerEnlaces,
@@ -435,9 +446,9 @@ body {
 .footerRedes {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     gap: var(--espacioMd);
-    width: 100%;
+    align-items: end    ;
 }
 
 .footerRedes a {
@@ -471,4 +482,25 @@ body {
 
 .footerCopyright p {
     margin: 0;
+}
+
+.strongUno{
+    color: var(--acentoAzul);
+    
+}
+.strongDos{
+    color: var(--acentoRosa);
+    
+}
+.strongTres{
+    color: var(--acentoVerde);
+    
+}
+.strongCuatro{
+    color: var(--acentoAmarillo);
+    
+}
+.strongCinco{
+    color: var(--acentoMagenta);
+    
 }
