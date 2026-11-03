@@ -434,18 +434,30 @@ body {
 /* Redes debajo de las columnas y alineadas a la derecha */
 .footerRedes {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: flex-end;
     gap: var(--espacioMd);
     width: 100%;
 }
 
 .footerRedes a {
-    padding: var(--espacioSm) var(--espacioMd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--espacio2xl);
+    height: var(--espacio2xl);
+    flex-shrink: 0;
+    padding: 0;
+    border-radius: var(--radioCircular);
     background-color: var(--colorFondo);
-    color: var(--colorTitulo);
-    border-radius: var(--radioSm);
     box-shadow: var(--sombraSuave);
+}
+
+.footerRedes img {
+    display: block;
+    width: var(--espacioXl);
+    height: var(--espacioXl);
+    object-fit: contain;
 }
 
 .footerCopyright {
