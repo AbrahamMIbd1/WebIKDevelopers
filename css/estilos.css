@@ -480,7 +480,7 @@ body {
     flex-shrink: 0;
     padding: 0;
     border-radius: var(--radioCircular);
-    background-color: vasr(--colorFondo);
+    background-color: var(--colorFondo);
     box-shadow: var(--sombraSuave);
 }
 
