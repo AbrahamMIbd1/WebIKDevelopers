@@ -10,10 +10,18 @@ body {
 .navegacionContenedor {
     display: flex;
     justify-content: space-between;
-    padding: 1px var(--espacioMd);
+    padding: var(--espacioMd) var(--espacioLg) var(--espacioMd) var(--espacio3xl);
     align-items: center;
     box-shadow: var(--sombraNav);
-    
+}
+
+.navLogo {
+    color: var(--colorTitulo);
+    font-size: var(--textoLogo);
+}
+
+.navOpciones ul {
+    margin: 0;
 }
 
 
@@ -41,7 +49,8 @@ body {
 .navegacionContenedor button {
     color: var(--colorTextoBlanco);
     background: var(--degradadoBoton);
-    padding: var(--espacioSm) var(--espacioXl);
+    font-weight: var(--pesoMedio);
+    padding: var(--espacioMd) var(--espacioLg);
     border-radius: var(--radioSm);
     border: none;
     cursor: pointer;
@@ -53,24 +62,20 @@ body {
     filter: brightness(1.1);
 }
 
-.navegacionContenedor img {
-    width: 100%;
-    max-width: 200px;
-    min-width: 100px;
-    height: auto;
-}
-
 /* ===== Seccion 1 ===== */
 .seccionUno {
     display: flex;
     justify-content: center;
-    gap: var(--espacio2xl);
+    align-items: center;
+    gap: var(--espacioSm);
     margin-top: var(--espacioSeccion);
 }
 
 .seccionUno h1 {
+    color: var(--colorTitulo);
+    font-size: var(--textoH1);
     font-weight: var(--pesoLigero);
-    line-height:var(--interlineadoTitulo);
+    line-height: var(--interlineadoH1);
 }
 
 .seccionUno h1 strong {
@@ -87,16 +92,18 @@ body {
 
 .seccionUnoIzquierda p {
     color: var(--colorTexto);
-    line-height: var(--interlineadoTexto);
-    margin-bottom: 40px;
+    line-height: var(--interlineadoAmplio);
+    margin-bottom: var(--espacio3xl);
 }
 
 .seccionUnoIzquierda button {
     background-color: var(--colorSecundario);
     color: var(--colorTextoBlanco);
+    font-weight: var(--pesoMedio);
     border: none;
     padding: var(--espacioMd) var(--espacioLg);
     border-radius: var(--radioSm);
+    box-shadow: var(--sombraBoton);
 }
 .seccionUnoIzquierda button:hover{
     background-color: var(--colorPrimario);
@@ -106,22 +113,21 @@ body {
 }
 
 .seccionUnoDerecha img {
-    border-radius: var(--radioLg);
-    box-shadow: var(--sombraSuave);
+    display: block;
 }
 
 
-.seccionDosTitulo{ 
+.seccionDosTitulo{
 
     margin-top: var(--espacioSeccion);
     text-align: center;
-    font-size: var(--textoGrande);
-    
+
 }
 .seccionDosTitulo h2 {
-   
-    font-weight: var(--pesoLigero);  
-    line-height: var(--interlineadoTitulo); 
+    color: var(--colorTitulo);
+    font-size: var(--textoH2Chico);
+    font-weight: var(--pesoLigero);
+    line-height: var(--interlineadoTexto);
 }
 
 .seccionDosTitulo h2 strong {
@@ -131,23 +137,25 @@ body {
 .seccionDosTexto p{
     font-family: var(--fuentePrincipal);
     text-align: center;
-    font-size: var(--textoChico);
+    font-size: var(--textoBase);
     color: var(--colorTextoSuave);
-    line-height: 1.8;
+    line-height: var(--interlineadoAmplio);
 }
 
+/* Las flechas suben para quedar a la altura del testimonio */
 .seccionDosFlechas{
     display: flex;
     justify-content: space-between;
-    padding-left: var(--espacioXl);
-    padding-right: var(--espacioXl);
+    margin-top: calc(-1 * var(--espacioLg));
+    padding-left: var(--espacio3xl);
+    padding-right: var(--espacio3xl);
 }
 .seccionDosFlechas button{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: var(--espacioXl);
-    height: var(--espacioXl);
+    width: var(--tamanoFlecha);
+    height: var(--tamanoFlecha);
     border: 2px solid var(--colorPrimario);
     border-radius: var(--radioCircular);
     background-color: var(--colorFondo);
@@ -166,8 +174,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: var(--espacioSeccion);
-    gap: var(--espacio2xl);
+    margin-top: var(--espacio2xl);
+    gap: var(--espacio3xl);
 }
 
 /* Cards no seleccionadas: centradas y apagadas */
@@ -182,25 +190,30 @@ body {
 }
 
 .seccionDosCards .cardImagen img {
-    width: 80px;
-    height: 80px;
+    width: var(--tamanoFoto);
+    height: var(--tamanoFoto);
     object-fit: cover;
     border-radius: var(--radioCircular);
 }
 
 .cardEstrellas {
     text-align: center;
+    margin-top: var(--espacioSm);
 }
 
 .cardEstrellas span{
     color: var(--colorEstrella);
+    font-size: var(--textoH3);
 }
 
 .cardContenido h3{
+    margin: var(--espacioXs) 0;
     font-size: var(--textoChico);
+    font-weight: var(--pesoSemibold);
     color: var(--colorTextoInactivo);
 }
 .cardContenido p{
+    margin: 0;
     font-size: var(--textoMini);
     color: var(--colorTextoInactivo);
 }
@@ -211,24 +224,28 @@ body {
 }
 
 .cardActiva .cardImagen img {
-    width: 100px;
-    height: 100px;
+    width: var(--tamanoFotoActiva);
+    height: var(--tamanoFotoActiva);
     box-shadow: var(--sombraSuave);
 }
 
 .cardActiva .cardContenido h3 {
+    font-size: var(--textoBase);
+    font-weight: var(--pesoBold);
     color: var(--colorPrimario);
 }
 
 .cardActiva .cardContenido p {
+    font-size: var(--textoChico);
     color: var(--colorTitulo);
 }
 
 /* Seccion 3: Diseño y desarrollo */
 
 .seccionTres {
-    margin-top: var(--espacioSeccion);
-    padding: var(--espacio3xl) var(--espacioLg);
+    margin-top: var(--espacio2xl);
+    padding: var(--espacioSeccion) var(--espacioLg);
+    border-top: thin solid var(--colorBorde);
     background-color: var(--colorFondoAlterno);
 }
 
@@ -238,7 +255,8 @@ body {
     color: var(--colorTitulo);
     font-size: var(--textoH2);
     font-weight: var(--pesoLigero);
-    margin: 0 0 var(--espacio3xl);
+    line-height: var(--interlineadoH1);
+    margin: 0 0 var(--espacioSeccion);
 }
 
 .seccionTresTitulo strong,
@@ -251,80 +269,85 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: var(--espacioLg);
-    max-width: var(--anchoContenedor);
+    max-width: var(--anchoContenido);
     margin: 0 auto;
 }
 
 .enfoque {
     width: calc(50% - var(--espacioLg) / 2);
-    padding: var(--espacioXl);
+    padding: var(--espacio2xl) var(--espacioXl);
     border: thin solid var(--colorBordeCard);
-    background-color: var(--colorFondo);
+    background-color: var(--colorFondoCard);
 }
 
 .enfoqueIcono {
     float: left;
-    width: var(--espacio3xl);
-    height: var(--espacio3xl);
+    width: var(--tamanoIcono);
+    height: var(--tamanoIcono);
     margin-right: var(--espacioLg);
     border-radius: var(--radioMd);
     text-align: center;
-    line-height: var(--espacio3xl);
-    font-size: var(--textoH2);
+    line-height: var(--tamanoIcono);
+    font-size: var(--textoLogo);
 }
 
 .enfoqueTitulo {
     margin: 0 0 var(--espacioSm);
-    margin-left: calc(var(--espacio3xl) + var(--espacioLg));
+    margin-left: calc(var(--tamanoIcono) + var(--espacioLg));
     color: var(--colorTitulo);
-    font-size: var(--textoH3);
-    font-weight: var(--pesoSemibold);
+    font-size: var(--textoTituloCard);
+    font-weight: var(--pesoMedio);
 }
 
 .enfoqueTexto {
-    margin: 0;
-    margin-left: calc(var(--espacio3xl) + var(--espacioLg));
-    color: var(--colorTextoSuave);
-    font-size: var(--textoChico);
+    margin: 0 0 var(--espacioXl);
+    margin-left: calc(var(--tamanoIcono) + var(--espacioLg));
+    color: var(--colorTexto);
+    font-size: var(--textoEnfoque);
     line-height: var(--interlineadoTexto);
 }
 
 .iconoOscuro {
-    background-color: var(--acentoOscuro);
+    background: var(--degradadoOscuro);
 }
 
 .iconoAzul {
-    background-color: var(--acentoAzul);
+    background: var(--degradadoAzul);
     color: var(--colorPrimario);
     font-size: var(--textoH3);
 }
 
 .iconoRosa {
-    background-color: var(--acentoRosa);
+    background: var(--degradadoRosa);
 }
 
 .iconoVerde {
-    background-color: var(--acentoVerde);
+    background: var(--degradadoVerde);
 }
 
 .iconoAmarillo {
-    background-color: var(--acentoAmarillo);
+    background: var(--degradadoAmarillo);
 }
 
 .iconoMagenta {
-    background-color: var(--acentoMagenta);
+    background: var(--degradadoMagenta);
 }
 
 
 .seccionCuatro {
-    padding: var(--espacio3xl) var(--espacioLg);
+    padding: var(--espacioXl) var(--espacioLg) var(--espacio3xl);
+    border-top: thin solid var(--colorBorde);
     background-color: var(--colorFondo);
+}
+
+.seccionCuatroTitulo {
+    margin-bottom: var(--espacio3xl);
 }
 
 .seccionCuatroRecursos {
     display: flex;
     gap: var(--espacio2xl);
-    max-width: var(--anchoContenedor);
+    max-width: var(--anchoRecursos);
     margin: 0 auto;
 }
 
@@ -338,26 +361,31 @@ body {
     width: 100%;
     height: var(--altoImagenRecurso);
     object-fit: cover;
-    margin-left: 10px;
-    border-radius: var(--radioLg);
+    border-radius: var(--radioMd);
 }
 
 .recursoTitulo {
-    margin: var(--espacioMd) 0;
-    color: var(--colorTexto);
-    font-size: var(--textoBase);
-    font-weight: var(--pesoMedio);
+    margin: var(--espacioLg) 0;
+    color: var(--colorTitulo);
+    font-size: var(--textoLinkFooter);
+    font-weight: var(--pesoNormal);
     line-height: var(--interlineadoTexto);
 }
 
+/* "Read More" a la derecha con la flecha separada */
 .recursoEnlace {
-    display: block;
-    margin-top: var(--espacioLg);
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--espacioMd);
     color: var(--colorPrimario);
-    font-weight: var(--pesoSemibold);
-    font-size: var(--textoBase);
+    font-weight: var(--pesoMedio);
+    font-size: var(--textoLinkFooter);
     text-decoration: none;
+}
+
+.recursoEnlace span {
+    font-size: var(--textoH3);
 }
 
 .recursoEnlace:hover {
@@ -367,53 +395,43 @@ body {
 /* ===== Seccion 5: Pie de pagina ===== */
 
 .footer {
-    
+    border-top: thin solid var(--colorBorde);
     background-color: var(--colorFondoAlterno);
     color: var(--colorTextoSuave);
     font-size: var(--textoGrande);
     line-height: var(--interlineadoTexto);
 }
 
+/* Columnas de distinto ancho: descripcion, enlaces, contacto y redes */
 .footerContenedor {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   padding-top: 50px;
-    padding-bottom: 50px;
-    gap: var(--espacio2xl);
-    
-    justify-items: center;
-}
-
-
-/* La descripcion ocupa mas espacio que los enlaces */
-.footerDescripcion {
-    flex: 2;
-    min-width: 0;
-    margin-left: 50px;
-}
-
-.footerEnlaces,
-.footerContacto {
-    flex: 1;
-    min-width: 0;
+    display: grid;
+    grid-template-columns: 4fr 2fr 3.4fr 1.7fr;
+    max-width: var(--anchoContenido);
+    margin: 0 auto;
+    padding: var(--espacio3xl) 0;
 }
 
 .footerNombre {
     margin: 0 0 var(--espacioLg);
     color: var(--colorTitulo);
+    font-size: var(--textoLinkFooter);
 }
 
 .footer h3 {
     margin: 0 0 var(--espacioLg);
     color: var(--colorTexto);
-    font-size: var(--textoH3);
+    font-size: var(--textoGrande);
     font-weight: var(--pesoBold);
 }
 
 .footerDescripcion p,
 .footerContacto p {
     margin-top: 0;
-    margin-bottom: var(--espacioLg);
+    margin-bottom: var(--espacioMd);
+}
+
+.footerContacto p {
+    max-width: var(--anchoTextoContacto);
 }
 
 /* Quitar los puntos y espacios de la lista */
@@ -421,10 +439,12 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    font-family: var(--fuenteSecundaria);
+    font-size: var(--textoLinkFooter);
 }
 
 .footerEnlaces li + li {
-    margin-top: var(--espacioMd);
+    margin-top: var(--espacioSm);
 }
 
 .footer a {
@@ -442,21 +462,20 @@ body {
     outline-offset: var(--espacioXs);
 }
 
-/* Redes debajo de las columnas y alineadas a la derecha */
+/* Redes en la ultima columna, abajo y alineadas a la derecha */
 .footerRedes {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
+    align-self: end;
     gap: var(--espacioMd);
-    align-items: end    ;
 }
 
 .footerRedes a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: var(--espacio2xl);
-    height: var(--espacio2xl);
+    width: var(--tamanoRed);
+    height: var(--tamanoRed);
     flex-shrink: 0;
     padding: 0;
     border-radius: var(--radioCircular);
@@ -466,24 +485,32 @@ body {
 
 .footerRedes img {
     display: block;
-    width: var(--espacioXl);
-    height: var(--espacioXl);
+    width: var(--tamanoIconoRed);
+    height: var(--tamanoIconoRed);
     object-fit: contain;
 }
 
 .footerCopyright {
     border-top: thin solid var(--colorBorde);
     background-color: var(--colorFondo);
-    padding: var(--espacioXs) var(--espacioLg);
+    padding: var(--espacioSm) var(--espacioLg);
     text-align: center;
     color: var(--colorTexto);
-    font-size: var(--textoChico);
+    font-size: var(--textoMini);
 }
 
 .footerCopyright p {
     margin: 0;
 }
 
+/* "UX first" de cada enfoque: solo cambia el color, sin negrita */
+.enfoqueTexto strong {
+    font-weight: var(--pesoNormal);
+}
+
+.strongOscuro{
+    color: var(--colorTitulo);
+}
 .strongUno{
     color: var(--acentoAzul);
     
