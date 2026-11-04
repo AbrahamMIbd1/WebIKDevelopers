@@ -11,6 +11,7 @@
     /* ---------- Tipografia ---------- */
     /* Unica fuente del sitio. Pesos cargados en index.html: 300-800 */
     --fuentePrincipal: 'Inter', sans-serif;
+    --fuenteSecundaria: 'Poppins', sans-serif;  /* enlaces del footer */
 
     /* Pesos */
     --pesoLigero: 300;      /* primera linea de titulos: "Great ... is", "Why customers love" */
@@ -23,14 +24,20 @@
     /* Tamaños */
     --textoH1: 48px;        /* titulo de la seccion 1 */
     --textoH2: 36px;        /* titulos de seccion */
-    --textoH3: 20px;        /* titulos de enfoques (seccion 3) */
+    --textoH2Chico: 32px;   /* titulo de la seccion 2 */
+    --textoLogo: 22px;      /* logo de texto del nav */
+    --textoH3: 20px;        /* estrellas, flechas */
+    --textoTituloCard: 18px;/* titulos de enfoques (seccion 3) */
     --textoGrande: 18px;    /* parrafo de la seccion 1, testimonio, footer */
+    --textoLinkFooter: 15px;/* enlaces del footer, recursos */
     --textoBase: 16px;      /* menu, nombres, titulos de recursos */
     --textoChico: 14px;  /* botones, copyright */
+    --textoEnfoque: 13px;   /* texto de las cards de la seccion 3 */
     --textoMini: 12px;      /* cargo en las cards */
 
     /* Interlineado */
     --interlineadoTitulo: 1.3;
+    --interlineadoH1: 1.4;
     --interlineadoTexto: 1.6;
     --interlineadoAmplio: 2;    /* parrafo de la seccion 1 y testimonio */
 
@@ -54,6 +61,7 @@
     /* ---------- Colores de fondo ---------- */
     --colorFondo: #ffffff;          /* secciones 1, 2 y 4 */
     --colorFondoAlterno: #f7f8fa;   /* seccion 3 y footer */
+    --colorFondoCard: #fafafa;      /* cards de la seccion 3 */
 
     /* ---------- Bordes ---------- */
     --colorBorde: #e2e8f0;          /* lineas divisorias (footer, copyright) */
@@ -67,6 +75,14 @@
     --acentoVerde: #2dd4a4;         /* Security & IP */
     --acentoAmarillo: #f7c948;      /* Code Reviews */
     --acentoMagenta: #c2185b;       /* Quality Assurance */
+
+    /* Degradados de los iconos de la seccion 3 */
+    --degradadoOscuro: linear-gradient(135deg, #3a3a42, var(--acentoOscuro));
+    --degradadoAzul: linear-gradient(135deg, #6fc3f7, #4d84f0);
+    --degradadoRosa: linear-gradient(135deg, #ff7eb3, var(--acentoRosa));
+    --degradadoVerde: linear-gradient(135deg, #5cecc4, #1fbf9a);
+    --degradadoAmarillo: linear-gradient(135deg, #ffd86e, #fca35a);
+    --degradadoMagenta: linear-gradient(135deg, #8e1fa8, #d6336c);
 
     /* Estrellas */
     --colorEstrella: #fbbf24;
@@ -84,6 +100,17 @@
 
     /* Ancho maximo del contenido */
     --anchoContenedor: 1200px;
+    --anchoContenido: 1110px;   /* seccion 3 y footer */
+    --anchoRecursos: 1080px;    /* seccion 4 */
+    --anchoTextoContacto: 270px;/* parrafo de contacto del footer */
+
+    /* Tamaños de elementos */
+    --tamanoFlecha: 40px;       /* flechas de la seccion 2 */
+    --tamanoFoto: 72px;         /* fotos de las cards */
+    --tamanoFotoActiva: 90px;   /* foto de la card activa */
+    --tamanoIcono: 52px;        /* iconos de la seccion 3 */
+    --tamanoRed: 32px;          /* circulos de redes sociales */
+    --tamanoIconoRed: 14px;     /* logo dentro del circulo */
 
     /* ---------- Bordes redondeados ---------- */
     --radioSm: 6px;         /* botones */
@@ -100,5 +127,5 @@
     /* ---------- Transiciones ---------- */
     --transicion: 0.2s ease;
 
-    --altoImagenRecurso: 175px;
+    --altoImagenRecurso: 157px;
 }
