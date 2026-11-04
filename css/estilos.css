@@ -480,8 +480,12 @@ body {
     flex-shrink: 0;
     padding: 0;
     border-radius: var(--radioCircular);
-    background-color: var(--colorFondo);
+    background-color: vasr(--colorFondo);
     box-shadow: var(--sombraSuave);
+}
+
+.footerRedes i {
+    font-size: var(--textoH3);
 }
 
 .footerRedes img {
