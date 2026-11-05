@@ -407,9 +407,9 @@ body {
 .footerContenedor {
     display: grid;
     grid-template-columns: 4fr 2fr 3.4fr 1.7fr;
-    max-width: var(--anchoContenido);
+    max-width: var(--anchoFooter);
     margin: 0 auto;
-    padding: var(--espacio3xl) 0;
+    padding: var(--espacio3xl) var(--margenLateralFooter);
 }
 
 .footerNombre {
@@ -445,7 +445,7 @@ body {
 }
 
 .footerEnlaces li + li {
-    margin-top: var(--espacioSm);
+    margin-top: var(--espacioMd);
 }
 
 .footer a {
@@ -480,20 +480,15 @@ body {
     flex-shrink: 0;
     padding: 0;
     border-radius: var(--radioCircular);
-    background-color: vasr(--colorFondo);
+    background-color: var(--colorFondo);
     box-shadow: var(--sombraSuave);
 }
 
 .footerRedes i {
-    font-size: var(--textoH3);
+    font-size: var(--tamanoIconoRed);
+    color: var(--colorTitulo);
 }
 
-.footerRedes img {
-    display: block;
-    width: var(--tamanoIconoRed);
-    height: var(--tamanoIconoRed);
-    object-fit: contain;
-}
 
 .footerCopyright {
     border-top: thin solid var(--colorBorde);

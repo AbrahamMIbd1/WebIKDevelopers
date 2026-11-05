@@ -102,7 +102,9 @@
     --anchoContenedor: 1200px;
     --anchoContenido: 1110px;   /* seccion 3 y footer */
     --anchoRecursos: 1080px;    /* seccion 4 */
-    --anchoTextoContacto: 270px;/* parrafo de contacto del footer */
+    --anchoTextoContacto: 300px;/* parrafo de contacto del footer */
+    --anchoFooter: 1600px;      /* ancho maximo del footer (incluye el margen lateral) */
+    --margenLateralFooter: 100px;/* separacion del footer con los bordes de la pantalla */
 
     /* Tamaños de elementos */
     --tamanoFlecha: 40px;       /* flechas de la seccion 2 */
